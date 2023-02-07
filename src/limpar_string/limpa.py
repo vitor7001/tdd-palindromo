@@ -6,7 +6,7 @@ def remover_espacos_em_branco(texto):
 def caixa_baixa(texto):
     return texto.lower()
 
-def remover_acentos(texto):
+def remover_acentos_nas_letras(texto):
     texto = ''.join(ch for ch in unicodedata.normalize('NFKD', texto)
                         if not unicodedata.combining(ch))
     return texto

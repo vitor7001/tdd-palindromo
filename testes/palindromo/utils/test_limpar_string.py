@@ -16,10 +16,11 @@ def test_caixa_baixa():
 
     assert validacao == "qualquer texto"
 
-def test_remover_acentos():
+def test_remover_acentos_nas_letras():
     
     texto = "úm téxto cóm àcéntós"
 
-    validacao = remover_acentos(texto)
+    validacao = remover_acentos_nas_letras(texto)
 
     assert validacao == "um texto com acentos"
+
