@@ -24,3 +24,10 @@ def test_remover_acentos_nas_letras():
 
     assert validacao == "um texto com acentos"
 
+def test_remover_acentos_na_frase():
+
+    texto = "-esta frase. possui, acentos!"
+
+    validacao = remover_acentos_na_frase(texto)
+
+    assert validacao == 'esta frase possui acentos'
