@@ -4,7 +4,9 @@ def tratar_texto(texto):
     texto_tratado = remover_espacos_em_branco(texto)
     texto_tratado = caixa_baixa(texto_tratado)
     texto_tratado = remover_acentos_nas_letras(texto_tratado)
+    print("ANTES DE REMOVER:", texto_tratado)
     texto_tratado = remover_acentos_na_frase(texto_tratado)
+    print("DPS DE REMMOVER:", texto_tratado)
     return texto_tratado
     
 def conteudo_valido(texto):
@@ -39,4 +41,5 @@ def remover_acentos_na_frase(texto):
     texto = texto.replace('!', '')
     texto = texto.replace(',', '')
     texto = texto.replace('/', '')
+    texto = texto.replace('’', '')
     return texto
