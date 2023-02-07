@@ -7,6 +7,8 @@ def tratar_texto(texto):
     texto_tratado = remover_acentos_na_frase(texto_tratado)
     return texto_tratado
     
+def conteudo_valido(texto):
+    return False
 
 def remover_espacos_em_branco(texto):
     return texto.replace(" ", "")
