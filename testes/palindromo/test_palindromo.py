@@ -26,3 +26,17 @@ def test_casos_validos():
 
     for item in lista_casos_validos:
         assert valida_palindromo(item) == True
+
+
+def test_casos_invalidos():
+    lista_casos_invalidos = [
+        "xyz",
+        "elephant",
+        "Country",
+        "Top . post!",
+        "Wonderful-fool",
+        "Wild imagination!",
+    ]
+
+    for item in lista_casos_invalidos:
+        assert valida_palindromo(item) == False
