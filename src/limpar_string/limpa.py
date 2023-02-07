@@ -1,5 +1,13 @@
 import unicodedata
 
+def tratar_texto(texto):
+    texto_tratado = remover_espacos_em_branco(texto)
+    texto_tratado = caixa_baixa(texto_tratado)
+    texto_tratado = remover_acentos_nas_letras(texto_tratado)
+    texto_tratado = remover_acentos_na_frase(texto_tratado)
+    return texto_tratado
+    
+
 def remover_espacos_em_branco(texto):
     return texto.replace(" ", "")
 
