@@ -8,7 +8,9 @@ def tratar_texto(texto):
     return texto_tratado
     
 def conteudo_valido(texto):
-    return False
+    if not texto:
+        return False
+    return True
 
 def remover_espacos_em_branco(texto):
     return texto.replace(" ", "")
