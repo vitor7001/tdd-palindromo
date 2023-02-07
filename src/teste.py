@@ -1,8 +1,3 @@
-from limpar_string.limpa import remover_espacos_em_branco
+from producao import valida_palindromo
 
-def main():
-    print(remover_espacos_em_branco("ov          asd asd 1232  qqqq"))
-    
-
-if __name__ == "__main__":
-    main()
+print(valida_palindromo("02/02/2020"))

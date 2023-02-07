@@ -5,3 +5,4 @@ def test_palindromo_valido():
 
 def test_palindromo_invalido():
     assert valida_palindromo("qualquer texto") == False
+
