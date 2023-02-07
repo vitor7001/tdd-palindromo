@@ -10,7 +10,17 @@ def tratar_texto(texto):
 def conteudo_valido(texto):
     if not texto:
         return False
+    
+    if classe_diferente_de_string(texto):
+        return False
+
     return True
+
+def classe_diferente_de_string(texto):
+    if not isinstance(texto, str):
+        return True
+
+    return False    
 
 def remover_espacos_em_branco(texto):
     return texto.replace(" ", "")
