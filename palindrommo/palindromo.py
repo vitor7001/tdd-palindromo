@@ -1,3 +1,3 @@
 
 def valida_palindromo(text):
-    return True
+    return text == text[::-1]
