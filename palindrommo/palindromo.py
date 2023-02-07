@@ -1,6 +1,3 @@
 
-def main():
-    print("VALIDANDO PALINDROMOS")
-
-if __name__ == "__main__":
-    main()
+def valida_palindromo(text):
+    return True
