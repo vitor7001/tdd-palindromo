@@ -1,5 +1,12 @@
 from src.limpar_string.limpa import *
 
+def test_tratar_texto():
+    texto = "Able was I, ere I saw Elba"
+
+    validacao = tratar_texto(texto)
+
+    assert validacao == "ablewasiereisawelba"
+
 def test_remover_espacos():
 
     texto = "qualquer string"
