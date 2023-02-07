@@ -22,6 +22,13 @@ def test_valido_se_receber_string_com_conteudo():
 
     assert validacao == True
 
+def test_erro_se_receber_algo_diferente_de_string():
+    texto = 1
+
+    validacao = conteudo_valido(texto)
+
+    assert validacao == False
+
 def test_remover_espacos():
 
     texto = "qualquer string"
